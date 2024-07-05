@@ -33,15 +33,6 @@ kotlin {
 
 val javadocJar = setupDokka(baseUrl = "https://github.com/a-sit-plus/certificate-of-residence/tree/main/")
 
-//catch the missing `signMavenPublication` Task, which slips through for reasons unknown
-afterEvaluate {
-    val signTasks = tasks.filter { it.name.startsWith("sign") }
-    tasks.filter { it.name.startsWith("publish") }.forEach {
-        Logger.lifecycle("   * ${it.name} now depends on ${signTasks.joinToString { it.name }}")
-        it.dependsOn(*signTasks.toTypedArray())
-    }
-}
-
 publishing {
     publications {
         withType<MavenPublication> {
