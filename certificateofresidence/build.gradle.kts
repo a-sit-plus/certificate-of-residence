@@ -31,7 +31,7 @@ kotlin {
     }
 }
 
-val javadocJar = setupDokka(baseUrl = "https://github.com/a-sit-plus/mobile-driving-licence/tree/main/")
+val javadocJar = setupDokka(baseUrl = "https://github.com/a-sit-plus/certificate-of-residence/tree/main/")
 
 //catch the missing `signMavenPublication` Task, which slips through for reasons unknown
 afterEvaluate {
@@ -47,9 +47,9 @@ publishing {
         withType<MavenPublication> {
             artifact(javadocJar)
             pom {
-                name.set("Mobile Driving Licence")
-                description.set("Use data representing Mobile Driving Licences as a ISO 18013-5 Credential")
-                url.set("https://github.com/a-sit-plus/mobile-driving-licence/")
+                name.set("Certificate of Residence")
+                description.set("Use data representing Certificates of Residence as a SD JWT Credential")
+                url.set("https://github.com/a-sit-plus/certificate-of-residence/")
                 licenses {
                     license {
                         name.set("The Apache License, Version 2.0")
