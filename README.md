@@ -15,6 +15,9 @@ Be sure to call `at.asitplus.wallet.cor.Initializer.initWithVcLib` first thing i
 
 ## Changelog
 
+Release 1.0.1:
+- Update to `vclib` 4.0.0
+
 Release 1.0.0:
 
 - Initial release, based on the Certificate of Residence Rulebook 0.1.0 from June 2024
