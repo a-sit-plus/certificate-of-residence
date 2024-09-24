@@ -15,6 +15,9 @@ Be sure to call `at.asitplus.wallet.cor.Initializer.initWithVCK` first thing in 
 
 ## Changelog
 
+Release 2.0.0:
+- Based on rulebook v1.0, changing `birth_date` and `arrival_date` from `Instant` to `LocalDate`
+
 Release 1.0.2:
 - Update to VC-K 4.1.0
 

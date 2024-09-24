@@ -14,7 +14,7 @@ class SerializerTest : FunSpec({
         val credential = CertificateOfResidence(
             familyName = randomString(),
             givenName = randomString(),
-            birthDate = randomInstant(),
+            birthDate = randomDate(),
             residenceAddress = ResidenceAddress(
                 poBox = randomString(),
                 thoroughfare = randomString(),
@@ -28,7 +28,7 @@ class SerializerTest : FunSpec({
             ),
             gender = IsoSexEnum.NOT_APPLICABLE,
             birthPlace = randomString(),
-            arrivalDate = randomInstant(),
+            arrivalDate = randomDate(),
             nationality = randomString(),
             issuanceDate = randomInstant(),
             expiryDate = randomInstant(),

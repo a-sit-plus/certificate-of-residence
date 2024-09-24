@@ -3,10 +3,10 @@ package at.asitplus.wallet.cor
 
 object CertificateOfResidenceDataElements {
 
-    /**Current last name(s) or surname(s) of the User.*/
+    /** Current last name(s) or surname(s) of the User. */
     const val FAMILY_NAME = "family_name"
 
-    /** Current first name(s), including middle name(s), of the User.*/
+    /** Current first name(s), including middle name(s), of the User. */
     const val GIVEN_NAME = "given_name"
 
     /** Day, month, and year on which the User was born. If unknown, approximate date of birth. */
@@ -27,7 +27,7 @@ object CertificateOfResidenceDataElements {
     /** Nationality of the User, as an Alpha-2 country code as specified in ISO 3166-1. */
     const val NATIONALITY = "nationality"
 
-    /** Date and time when the CoR attestation was issued */
+    /** Date and time when the CoR attestation was issued. */
     const val ISSUANCE_DATE = "issuance_date"
 
     /** Date and time when the CoR attestation will expire. */
