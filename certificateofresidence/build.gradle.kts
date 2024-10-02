@@ -1,6 +1,3 @@
-import at.asitplus.gradle.Logger
-import at.asitplus.gradle.kotest
-import at.asitplus.gradle.serialization
 import at.asitplus.gradle.setupDokka
 
 plugins {
@@ -25,7 +22,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                api("at.asitplus.wallet:vck:4.1.0")
+                api("at.asitplus.wallet:vck:5.0.0")
             }
         }
     }
