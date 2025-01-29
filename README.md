@@ -11,9 +11,13 @@
 Data classes representing certificate of residences, as a SD JWT Credential, with the help
 of [VC-K](https://github.com/a-sit-plus/vck).
 
-Be sure to call `at.asitplus.wallet.cor.Initializer.initWithVCK` first thing in your application.
+Be sure to call `at.asitplus.wallet.cor.Initializer.initWithVCK()` first thing in your application.
 
 ## Changelog
+
+Release 2.1.2
+- Update to VC-K 5.3.0
+- Add attribute names in dot-notation, e.g. `residence_address.po_box`, see `CertificateOfResidenceDataElements`
 
 Release 2.1.1
 - Update to VC-K 5.2.1

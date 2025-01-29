@@ -12,7 +12,7 @@ object CertificateOfResidenceDataElements {
     /** Day, month, and year on which the User was born. If unknown, approximate date of birth. */
     const val BIRTH_DATE = "birth_date"
 
-    /** The address of residence of the User. */
+    /** The address of residence of the User, see [Address]. */
     const val RESIDENCE_ADDRESS = "residence_address"
 
     /** User’s gender, using a value as defined in ISO/IEC 5218. */
@@ -49,6 +49,40 @@ object CertificateOfResidenceDataElements {
     /** Country subdivision code of the jurisdiction that issued the CoR attestation, as defined in ISO 3166-2:2020,
      *  Clause 8. The first part of the code SHALL be the same as the value for issuing_country. */
     const val ISSUING_JURISDICTION = "issuing_jurisdiction"
+
+    /** A location designator for a postal delivery point at a post office, usually a number (ex: “9383”). */
+    const val RESIDENCE_ADDRESS_PO_BOX = "$RESIDENCE_ADDRESS.po_box"
+
+    /** The name of a passage or way through from one location to another. A thoroughfare is usually a street. */
+    const val RESIDENCE_ADDRESS_THOROUGHFARE = "$RESIDENCE_ADDRESS.thoroughfare"
+
+    /** Number or sequence of characters that uniquely identifies the locator within the relevant scope
+     * (building number, apartment number, etc). For an address such as "Flat 3, 17 Bridge Street",
+     * the locator is "flat 3, 17". */
+    const val RESIDENCE_ADDRESS_LOCATOR_DESIGNATOR = "$RESIDENCE_ADDRESS.locator_designator"
+
+    /** Proper noun(s) applied to the real world entity identified by the locator (ex: name of the property
+     * or complex). */
+    const val RESIDENCE_ADDRESS_LOCATOR_NAME = "$RESIDENCE_ADDRESS.locator_name"
+
+    /** Code created and maintained for postal purposes to identify a subdivision of addresses and postal
+     *  delivery points (ex: “7500”). */
+    const val RESIDENCE_ADDRESS_POST_CODE = "$RESIDENCE_ADDRESS.post_code"
+
+    /** Name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery
+     * points (ex: “Paris”). */
+    const val RESIDENCE_ADDRESS_POST_NAME = "$RESIDENCE_ADDRESS.post_name"
+
+    /** Name of the uppermost level of the address. Almost always this is a country, which then must be the
+     * Aplha-2 country code as specified in ISO 3166-1. */
+    const val RESIDENCE_ADDRESS_ADMIN_UNIT_L_1 = "$RESIDENCE_ADDRESS.admin_unit_L1"
+
+    /** Name of a secondary level/region of the address. This is usually a county, state, region, province or
+     * other such area that typically encompasses several localities */
+    const val RESIDENCE_ADDRESS_ADMIN_UNIT_L_2 = "$RESIDENCE_ADDRESS.admin_unit_L2"
+
+    /** Complete address written as a string */
+    const val RESIDENCE_ADDRESS_FULL_ADDRESS = "$RESIDENCE_ADDRESS.full_address"
 
     object Address {
         /** A location designator for a postal delivery point at a post office, usually a number (ex: “9383”). */
