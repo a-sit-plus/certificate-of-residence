@@ -15,15 +15,18 @@ Be sure to call `at.asitplus.wallet.cor.Initializer.initWithVCK()` first thing i
 
 ## Changelog
 
-Release 2.1.2
+Release 2.1.3:
+- Update to VC-K 5.7.0
+
+Release 2.1.2:
 - Update to VC-K 5.3.0
 - Add attribute names in dot-notation, e.g. `residence_address.po_box`, see `CertificateOfResidenceDataElements`
 
-Release 2.1.1
+Release 2.1.1:
 - Update to VC-K 5.2.1
 - Kotlin 2.1.0
 
-Release 2.1.0
+Release 2.1.0:
 - Update to VC-K 5.0.0
 
 Release 2.0.0:

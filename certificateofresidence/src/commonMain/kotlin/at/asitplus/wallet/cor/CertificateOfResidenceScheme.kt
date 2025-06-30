@@ -10,4 +10,5 @@ object CertificateOfResidenceScheme : CredentialScheme {
     override val sdJwtType: String = "eu.europa.ec.eudi.cor.1"
     override val supportedRepresentations: Collection<CredentialRepresentation> =
         listOf(SD_JWT)
+    override val claimNames: Collection<String> = CertificateOfResidenceDataElements.ALL_ELEMENTS
 }
