@@ -15,6 +15,11 @@ Be sure to call `at.asitplus.wallet.cor.Initializer.initWithVCK()` first thing i
 
 ## Changelog
 
+Release 2.1.4:
+- VC-K 5.8.0
+- Kotlin 2.2.0
+- kotlinx-datetime 0.7.1
+
 Release 2.1.3:
 - Update to VC-K 5.7.0
 
