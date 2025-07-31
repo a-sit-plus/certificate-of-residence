@@ -22,7 +22,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                api("at.asitplus.wallet:vck:5.7.0")
+                api("at.asitplus.wallet:vck:5.8.0")
             }
         }
     }
@@ -64,11 +64,6 @@ publishing {
             signing.isRequired = false
         }
     }
-}
-
-repositories {
-    mavenCentral()
-    maven(url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
 }
 
 signing {
