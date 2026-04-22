@@ -1,14 +1,14 @@
 package at.asitplus.wallet.cor
 
 import at.asitplus.wallet.lib.data.vckJsonSerializer
-import io.kotest.core.spec.style.FunSpec
+import de.infix.testBalloon.framework.core.testSuite
 import io.kotest.matchers.shouldBe
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.encodeToString
 import kotlin.random.Random
 
-class SerializerTest : FunSpec({
+val SdJwtSerializationTest by testSuite {
 
     test("serialize credential") {
         val credential = CertificateOfResidence(
@@ -46,7 +46,7 @@ class SerializerTest : FunSpec({
         parsed shouldBe credential
     }
 
-})
+}
 
 private fun randomDate() = LocalDate.fromEpochDays(Random.nextInt(0, 1024))
 
